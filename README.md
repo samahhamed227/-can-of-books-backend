@@ -9,7 +9,7 @@ Books are life-changing. They have the power to enlighten, educate, entertain, h
 ## Use this template
 
 Clone this repo to your own account with the green "Use this template" button. Then, add any collaborators. Now you are ready to start adding features! Deploy your site to let the world know which books have had the greatest impact on you, and what's recommended. Enjoy!
-
+<!-- 
 
 # Project Name
 
@@ -29,15 +29,15 @@ Clone this repo to your own account with the green "Use this template" button. T
 <!-- Use this area to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an example:
 
 01-01-2001 4:59pm - Application now has a fully-functional express server, with a GET route for the location resource. -->
-
+<!-- 
 ## Estimates
-<!-- See below -->
+See below --> -->
 
 
-Name of feature:Building CRUD apps with MongoDB
-Estimate of time needed to complete: 4hours
-Start time: _____
+# Name of feature:Building CRUD apps with MongoDB
+ ## Estimate of time needed to complete: 4hours
+## Start time: 2
 
-Finish time: _____
+## Finish time: 11
 
-Actual time needed to complete: _____
+## Actual time needed to complete: 5 hours
