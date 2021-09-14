@@ -24,13 +24,14 @@ const getIndex = require('./controller /index.controller');
 const bestbook = require('./component/BestBooks');
 // bestbook();
 
-const { getboooks ,createbook, deletebook} = require('./controller /books.controller');
+const { getboooks ,createbook, deletebook,updatebook} = require('./controller /books.controller');
 
 
 app.get('/', getIndex);
 app.get('/books', getboooks);
 app.post('/books', createbook); 
 app.delete('/books/:books_Id', deletebook); 
+app.put('/books/:books_Id', updatebook) 
 
 
 
