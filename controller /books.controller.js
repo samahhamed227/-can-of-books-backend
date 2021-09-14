@@ -38,9 +38,27 @@ const deletebook= (request, response) => {
  
 
 }
+
+  //update 
+  const updatebook= (request, response) => {
+    /**
+     * HTTP PUT methods uses the request body to send/ recieve the data that it needs to update
+     * We can use the PARAMS with the PUT HTTP method to receive the ID of the item/ book that we want to update
+     */
+  
+     const { title, description, status,email } = request.body;
+     const bookId2 = request.params.books_Id;
+  
+     bookmodel.findByIdAndUpdate({_id: bookId2 }, { title, description, status,email }, { new: true }, (error, updatebooksdata) => {
+  
+      response.json(updatebooksdata);
+    });
+  }
+
   
 module.exports = {
   getboooks,
   createbook,
-  deletebook
+  deletebook,
+  updatebook
 }
