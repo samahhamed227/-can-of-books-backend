@@ -5,7 +5,7 @@ const bookmodel = require('../modules/Book.modal');
 
 const getboooks = (request, response) => {
 
-  bookmodel.find((error, booksdata) => {
+  bookmodel.find({email: request.query.email},(error, booksdata) => {
     response.json(booksdata)
   });
 
